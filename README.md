@@ -3,6 +3,6 @@
 
 La aplicación requiere:
 
-- **iOS 16.1 o superior**.
+- **Xcode 16.1 o superior**.
 - Abrir el archivo `HackerNews.xcworkspace` en Xcode.
 - Compilar y ejecutar.
