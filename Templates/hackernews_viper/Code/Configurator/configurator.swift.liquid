@@ -1,0 +1,22 @@
+{% include 'header' %}
+
+import UIKit
+
+class {{ module_info.name }}ModuleConfigurator: ModuleConfigurator {
+
+    static func configure(viewController: UIViewController) {
+        guard let viewController = viewController as? {{ module_info.name }}ViewController else { return }
+    
+        let router = {{ module_info.name }}Router()
+
+        let presenter = {{ module_info.name }}Presenter()
+        presenter.view = viewController
+        presenter.router = router
+
+        let interactor = {{ module_info.name }}Interactor()
+        interactor.output = presenter
+
+        presenter.interactor = interactor
+        viewController.output = presenter
+    }
+}
