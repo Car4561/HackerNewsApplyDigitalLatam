@@ -1,4 +1,5 @@
-# Guía de Ejecución de la Aplicación de Demostración
+## HackerNewsApplyDigitalLatam
+### Guía de Ejecución de la Aplicación
 
 La aplicación requiere:
 
